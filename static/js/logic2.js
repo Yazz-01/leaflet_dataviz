@@ -18,6 +18,16 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 //Data - Promise
 var link = "static/data/eartquak.geojson";
 
+var mapStyle = {
+    color: "white",
+    fillColor: "pink",
+    fillOpacity: 0.6,
+    weight: 1.5
+};
+
 d3.json(link).then(function(data) {
-    L.geoJson(data).addTo(myMap);
+    L.geoJson(data, {
+        //Style Object
+
+    }).addTo(myMap);
 });
