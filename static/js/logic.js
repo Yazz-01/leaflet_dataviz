@@ -130,7 +130,7 @@ legend.onAdd = function() {
             '<i style="background:' + chooseColor(depth[i] + 1) + '"></i> ' +
             depth[i] + (depth[i + 1] ? '&ndash;' + depth[i + 1] + '<br>' : '+');
     }
-    return div;
+    return div
 };
 legend.addTo(myMap)
 });
