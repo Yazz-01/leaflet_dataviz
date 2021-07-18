@@ -133,10 +133,10 @@ legend.onAdd = function() {
     return div
 };
 legend.addTo(myMap)
-});
+
 // Llamar fucntion  deployMap --- 
 deployMap()
-});
+
 
 
 //Create a GeoJson layer containing the features array
